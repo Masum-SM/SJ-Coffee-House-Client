@@ -5,7 +5,7 @@ import Item from './Item';
 const Menus = () => {
     const [item, setItem] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/menu")
+        fetch("https://sj-coffee-server.vercel.app/menu")
             .then((res) => res.json())
             .then((data) => setItem(data))
     }, [])
