@@ -1,0 +1,47 @@
+.card_bg{
+    background-color: rgb(216, 208, 201);
+}
+.card_name{
+    color: chocolate;
+}
+.card_btn{
+    background-color: chocolate;
+}
+.menu_full{
+    background-color: rgb(247, 243, 235);
+}
+.menu_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 2%;
+    margin-bottom: 4%;
+   
+  }
+  .menu_header {
+    text-align: center;
+    margin: 20px;
+  }
+  .menu_container {
+    width: 100%;
+  }
+.menu_hed{
+    font-size: 44px;
+    font-weight: 700;
+    background-color: rgb(218, 185, 162);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    color: chocolate;
+}
+.hed_pera{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+.menu_more{
+    background-color: rgb(234, 179, 159);
+    color: rgb(222, 99, 11);
+    font-weight: 800;
+    width: 250px;
+}

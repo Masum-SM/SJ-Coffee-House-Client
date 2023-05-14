@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "name":"French Press",
+        "price": 4.50,
+        "des":"A French press, also known as a press pot or plunger pot, is a simple yet elegant way to brew coffee. Coarsely ground coffee beans are steeped in hot water for several minutes, then the plunger is pressed down to separate the coffee grounds from the liquid.",
+        "img":"https://i.ibb.co/CKWnPHw/11.jpg"
+        
+    },
+
+    {
+        "id":2,
+        "name":"Pour Over",
+        "price": 4.75,
+        "des":"Pour over coffee is a slow and deliberate brewing method that allows for precise control over the extraction process. Hot water is slowly poured over a bed of coffee grounds in a cone-shaped filter, allowing the water to extract the flavors and aromas of the coffee.",
+        "img":"https://i.ibb.co/2yF1Ncw/22.jpg"
+        
+    },
+    {
+        "id":3,
+        "name":"Turkish Coffee",
+        "price": 3.50,
+        "des":"Turkish coffee is a traditional method of brewing coffee that originated in Turkey. It is made by boiling finely ground coffee beans with water and sugar in a special pot called a cezve. The coffee is then poured into small cups, and the grounds are left in the pot.",
+        "img":"https://i.ibb.co/jRZRQyr/33.jpg"
+        
+    },
+    {
+        "id":4,
+        "name":"Nitro Cold Brew",
+        "price": 5.25,
+        "des":"Nitro cold brew is a smooth and creamy coffee that is infused with nitrogen gas. The coffee is brewed using cold water and is infused with nitrogen gas, which gives it a velvety texture and a rich, creamy head. It's the perfect drink for those who want a refreshing and indulgent coffee experience.",
+        "img":"https://i.ibb.co/WkW0M9C/44.jpg"
+        
+    },
+    {
+        "id":5,
+        "name":"Ethiopian Coffee",
+        "price": 5.50,
+        "des":"Ethiopian coffee is known for its fruity and floral flavors, which are a result of the unique processing methods used in Ethiopia. The coffee is often served in small cups and is traditionally enjoyed with a snack called injera, a sourdough flatbread.",
+        "img":"https://i.ibb.co/Q6qJFKG/5.jpg"
+        
+    },
+    {
+        "id":6,
+        "name":"Bulletproof Coffee",
+        "price": 6.00,
+        "des":" Bulletproof coffee is a high-fat coffee drink that is made with grass-fed butter and MCT oil. The coffee is brewed using high-quality coffee beans, and the butter and oil are blended in to create a creamy and indulgent drink. The result is a coffee that is rich in healthy fats and is perfect for those following a low-carb or ketogenic diet.",
+        "img":"https://i.ibb.co/bKGg5yk/66.jpg"
+        
+    }
+]

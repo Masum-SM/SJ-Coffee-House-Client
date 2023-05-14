@@ -1,0 +1,11 @@
+.login_full{
+    background-color: rgb(244, 244, 251) !important;
+    
+}
+.login_text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.log_btn{
+    background-color: #202c45;
+}
