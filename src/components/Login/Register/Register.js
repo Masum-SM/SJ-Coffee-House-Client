@@ -1,28 +1,46 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider';
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const {createUser} = useContext(AuthContext)
-    const handleRegister = data => {
-        createUser(data.email,data.password)
+    const {createUser,googleLoing} = useContext(AuthContext)
+    const [loginError, setLoginError] = useState(' ');
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/';
+    
+    const handleGoogleLogin = data =>{
+        setLoginError(' ');
+        googleLoing()
         .then(result =>{
             const user = result.user;
             console.log(user);
+            navigate(from, {replace:true});
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+            console.log(error.message)
+            setLoginError(error.message)
+        });
+    }
+
+    const handleRegister = data => {
+        setLoginError(' ');
+        createUser(data.email,data.password)
+        .then(result =>{
+            const user = result.user;
+            
+            console.log(user);
+            navigate(from, {replace:true});
+        })
+        .catch(error => {
+            console.log(error.message)
+            setLoginError(error.message)
+        });
         console.log(data)
-        // axios.post('/auth', data)
-        //     .then(res => {
-        //         console.log(res.data,
-        //             res.data.token)
-        //         window.open(`http://localhost:3000?token=${res.data.token}`)
-        //     }).then(err => {
-        //         console.log(err);
-        //         alert(err.message)
-        //     })
+
     }
     return (
         <div>
@@ -61,12 +79,14 @@ const Register = () => {
                             <label className="label"><span className="label-text mt-2">Forget Password?</span></label>
 
                         </div>
-
+                        <div>
+                            {loginError && <p className='text-red-600' >{loginError}</p> } 
+                        </div>
                         <input className='btn log_btn w-full my-8' value="Register" type="submit" />
                     </form>
                     <p>Already have an account <Link className='text-primary' to="/login">Please Login.</Link></p>
                     <div className="divider">OR</div>
-                    <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                    <button className='btn btn-outline w-full' onClick={handleGoogleLogin}>CONTINUE WITH GOOGLE</button>
                 </div>
             </div>
         </div>
